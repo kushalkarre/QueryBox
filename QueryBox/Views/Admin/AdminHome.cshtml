@@ -1,0 +1,600 @@
+﻿@model QueryBox.Models.Admin
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link href="css/StudentsHomepage.css" rel="stylesheet">-->
+    <link href="~/css/AdminHome.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    .relative1 {
+        position: relative;
+        left: 15px;
+    }
+
+    .relative2 {
+        position: relative;
+        left: 300px;
+    }
+
+    .table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="imgcontainer">
+            <table class="table table-striped table-hover">
+                <tr>
+                    <td>
+                        <img src="~/images/adminlogin.jpg" alt="" width="150" height="150">
+
+                    </td>
+                    <td>
+                    <td>
+                        <b>
+                            Name :<b>
+                                <BR><BR>
+                                <b>
+                                    CENTER :<b>
+                                        <BR><BR>
+                                        <b>LOCATION :<b><BR><BR>
+                    </td>
+                    <td>
+                        <B>
+                            Prashant sir</p>
+                            <p>IACSD</p>
+                            <p>PUNE</p>
+                    </td>
+
+                    </td>
+                <tr>
+            </table>
+
+        </div>
+        <table>
+            <tr>
+                <td>
+
+                    <!--1) ADD FACULTY STARTS HERE -->
+                    <div class="row">
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="fancy-collapse-panel">
+                                <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion1" href="#collapseF1" aria-expanded="false" aria-controls="collapseF1">
+
+                                                    <i class="fa fa-plus-circle" style="font-size:20px;color:blue;"></i>
+                                                    ADD FACULTY
+
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                                        </div>
+                                        <div id="collapseF1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="panel-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+
+                                                <table>
+                                                    <!-- ADD FACULTY FORM-->
+                                                    <form id='register-form' action="@Url.Action("AdminFacultyRegistration","Admin")" method='post'>
+                                                        <input type="text" name="Username" placeholder="Username" required>
+                                                        <input type="password" name="Password" placeholder="Password" required>
+                                                        <input type="text" name="lab_faculty" placeholder="lab_faculty" required>
+                                                        <input type="text" name="lab_status" placeholder="lab_status" required />
+                                                        <button type='submit' class="buttongreen">Register</button>
+                                                    </form>
+                                                    <br/>
+                                                  <b>  @ViewBag.facultyreg</b>
+                                                    <!-- ADD FACULTY FORM ENDS HERE-->
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--ADD FACULTY ENDS HERE-->
+                        <!--1) ADD STUDENT STARTS HERE-->
+                        <div class="col-sm-1">
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="fancy-collapse-panel">
+                                <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion2" href="#collapseS1" aria-expanded="false" aria-controls="collapseS1">
+                                                    <i class="fa fa-plus-circle" style="font-size:20px;color:blue;"></i>
+                                                    ADD STUDENT
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                                        </div>
+                                        <div id="collapseS1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="panel-body">
+                                                ADmin pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+
+                                                <table>
+                                                    <!--STUDENT REGISTRATION FORM -->
+                                                  
+                                                   
+                                                    <form id='register-form' action="@Url.Action("AdminStudentRegistration","Admin")" method='post'>
+                                                        <input type="text" name="username" placeholder="Username" required>
+                                                        <input type="password" name="password" placeholder="Password" required>
+                                                        <input type="text" name="student_lab" placeholder="student lab" required />
+                                                        <input type="text" name="student_pc_no" placeholder="student pc_no" required/>
+                                                        <button type='submit' class="buttongreen">Register</button>
+                                                    </form>
+                                                  <br/>
+                                                <b>  @ViewBag.studreg </b>
+                         
+                                                    <!--STUDENT FORM ENDS-->
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-1">
+                            </div>
+
+                        </div>
+                        <!-- ADD STUDENT ENDS HERE-->
+
+                </td>
+            </tr>
+        </table>
+
+
+
+
+
+
+
+        <table>
+            <tr>
+                <td>
+                    <!-- UPDATE FACULTY STARTS HERE-->
+                    <div class="row">
+                        <div class="col-sm-2">
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="fancy-collapse-panel">
+                                <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion3" href="#collapseF2" aria-expanded="false" aria-controls="collapseF2">
+
+                                                    <i class="fa fa-edit" style="font-size:20px;color:GREEN;"></i>
+                                                    UPDATE FACULTY
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                                        </div>
+                                        <div id="collapseF2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="panel-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+
+                                                <table>
+                                                    <!--UPDATE FACULTY FORM-->
+                                         
+                                                    <form id='register-form' action="" method='post'>
+                                                        <input type="text" placeholder="Username" required>
+                                                        <input type="email" placeholder="Email" required>
+                                                        <input type="password" placeholder="Password" required>
+                                                        <input type="password" placeholder="Re Password" required>
+                                                        <button type='submit' class="buttoncyan">Update</button>
+                                                    </form>
+                                                    <!--UPDATE FORM ENDS-->
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--2) UPDATE FACULTY ENDS HERE-->
+                        <!--2) UPDATE STUDENT STARTS HERE-->
+                        <div class="col-sm-1">
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="fancy-collapse-panel">
+                                <div class="panel-group" id="accordion4" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion4" href="#collapseS2" aria-expanded="false" aria-controls="collapseS2">
+                                                    <i class="fa fa-edit" style="font-size:20px;color:GREEN;"></i>
+                                                    UPDATE STUDENT
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                                        </div>
+                                        <div id="collapseS2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="panel-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+
+                                                <table>
+                                                    <!--UPDATE STUDENT FORM-->
+                                                    <form id='register-form' action="" method='post'>
+                                                        <input type="text" placeholder="Username" required>
+                                                        <input type="email" placeholder="Email" required>
+                                                        <input type="password" placeholder="Password" required>
+                                                        <input type="password" placeholder="Re Password" required>
+                                                        <button type='submit' class="buttoncyan">Update</button>
+                                                    </form>
+                                                    <!--UPDATE FORM ENDS-->
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-1">
+                            </div>
+
+                        </div>
+                        <!--UPDATE STUDENT ENDS HERE-->
+                </td>
+            </tr>
+        </table>
+
+
+
+
+
+
+
+
+
+
+        <table>
+            <tr>
+                <td>
+                    <!--3 REMOVE FACULTY STARTS HERE-->
+                    <div class="row">
+
+                        <div class="col-sm-2">
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="fancy-collapse-panel">
+                                <div class="panel-group" id="accordion5" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion5" href="#collapseF3" aria-expanded="false" aria-controls="collapseF3">
+
+                                                    <i class="fa fa-minus-circle" style="font-size:20px;color:red"></i>REMOVE FACULTY
+
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                                        </div>
+                                        <div id="collapseF3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="panel-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+
+                                                <table>
+                                                    <!--Delete faculty form-->
+                                                    <form id='register-form' action="@Url.Action("AdminFacultyDelete","Admin")" method='post'>
+                                                        <input type="text" name="Faculty_Id" placeholder="Student Id" required>
+                                                        <button type='submit' class="buttonred">Remove</button>
+                                                    </form>
+                                                    <br/>
+                                                    <b>@ViewBag.regddel</b>
+                                                    <!--form ends-->
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- REMOVE FACULTY ENDS HERE-->
+                        <!-- 3) REMOVE STUDENT STARTS HERE-->
+
+                        <div class="col-sm-1">
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="fancy-collapse-panel">
+                                <div class="panel-group" id="accordion6" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion6" href="#collapseS3" aria-expanded="false" aria-controls="collapseS3">
+
+                                                    <i class="fa fa-minus-circle" style="font-size:20px;color:red"></i>REMOVE STUDENT
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                                        </div>
+                                        <div id="collapseS3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="panel-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+
+                                                <table>
+                                                    <!--Delete STUDENT FORM-->
+                                                    <form id='register-form' action="@Url.Action("AdminStudentDelete", "Admin")" method='post'>
+                                                        <input type="text" name="Student_Id" placeholder="Student Id" required>
+                                                        <button type='submit' class="buttonred">Remove</button>
+                                                    </form>
+                                                    <!--delete FORM ENDS-->
+                                                    <br>
+                                                    <b>@ViewBag.studdel</b>
+                                                </table>
+        </table>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-sm-1">
+    </div>
+
+    </div>
+
+    <!-- REMOVE STUDENT ENDS HERE-->
+    </td></tr>
+    </table>
+
+    <!--VIEW faculty begins-->
+    <div class="col-sm-2">
+
+    </div>
+
+    <div class="col-sm-7">
+        <div class="fancy-collapse-panel">
+            <div class="panel-group" id="accordion7" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion7" href="#collapseF4" aria-expanded="false" aria-controls="collapseF4">
+
+                                <i class="fa fa-bar-chart-o" style="font-size:20px;color:cyan"></i>VIEW FACULTY RESULT
+
+                            </a>
+                        </h4>
+                    </div>
+                    <div class="panel-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                    </div>
+                    <div id="collapseF4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+
+
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr class="success">
+                                        <th class="col-check"></th>
+                                        <th>Id</th>
+                                        <th>StudentName</th>
+                                        <th>BATCH</th>
+                                        <th>PC</th>
+                                        <th>Lab</th>
+                                        <th>Send Query</th>
+                                        <th>Cancel Query</th>
+                                        <th>Query Status</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="danger">
+                                        <td class="col-check"><input type="checkbox" class="form-check-input"></td>
+                                        <td>1</td>
+                                        <td>ZYX987</td>
+                                        <td>BATCH A</td>
+                                        <td>35</td>
+                                        <td>LAB C</td>
+                                        <td><button class="buttongreen button2">Approve Query</button></td>
+                                        <td><button class="buttonred button2">Reject Query</button></td>
+                                        <td><button class="buttonyellow button1">CANCELLED</button></td>
+
+                                    </tr>
+                                    <tr class="danger">
+                                        <td class="col-check"><input type="checkbox" class="form-check-input"></td>
+                                        <td>2</td>
+                                        <td>WVU654</td>
+                                        <td>BATCH A</td>
+                                        <td>35</td>
+                                        <td>LAB C</td>
+                                        <td><button class="buttongreen button2">Approve Query</button></td>
+                                        <td><button class="buttonred button2">Reject Query</button></td>
+                                        <td><button class="buttonyellow button1">CANCELLED</button></td>
+                                    </tr>
+                                    <tr class="danger">
+                                        <td class="col-check"><input type="checkbox" class="form-check-input"></td>
+                                        <td>3</td>
+                                        <td>TSR321</td>
+                                        <td>BATCH A</td>
+                                        <td>35</td>
+                                        <td>LAB C</td>
+                                        <td><button class="buttongreen button2">Approve Query</button></td>
+                                        <td><button class="buttonred button2">Reject Query</button></td>
+                                        <td><button class="buttongreen button1">Approved</button></td>
+                                    </tr>
+                                    <tr class="danger">
+                                        <td class="col-check"><input type="checkbox" class="form-check-input"></td>
+                                        <td>4</td>
+                                        <td>QPO987</td>
+                                        <td>BATCH A</td>
+                                        <td>35</td>
+                                        <td>LAB C</td>
+                                        <td><button class="buttongreen button2">Approve Query</button></td>
+                                        <td><button class="buttonred button2">Reject Query</button></td>
+                                        <td><button class="buttongreen button1">Approved</button></td>
+
+                                    </tr>
+                                    <tr class="danger">
+                                        <td class="col-check"><input type="checkbox" class="form-check-input"></td>
+                                        <td>5</td>
+                                        <td>NML654</td>
+                                        <td>BATCH A</td>
+                                        <td>35</td>
+                                        <td>LAB C</td>
+                                        <td><button class="buttongreen button2">Approve Query</button></td>
+                                        <td><button class="buttonred button2">Reject Query</button></td>
+                                        <td><button class="buttonred button1">NEW QUERY</button></td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--View FACULTY ends-->
+    <!--VIEW Student result-->
+
+    <div class="row">
+
+        <div class="col-sm-3">
+        </div>
+        <div class="col-sm-7">
+            <div class="fancy-collapse-panel">
+                <div class="panel-group" id="accordion8" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion8" href="#collapseS4" aria-expanded="false" aria-controls="collapseS4">
+
+                                    <i class="fa fa-bar-chart-o" style="font-size:20px;color:violet"></i>VIEW STUDENT RESULT
+
+                                </a>
+                            </h4>
+                        </div>
+                        <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        </div>
+                        <div id="collapseS4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+
+                                <table class="table table-striped table-hover">
+                                    <thead>
+                                        <tr class="success">
+                                            <th class="col-check"></th>
+                                            <th>Id</th>
+                                            <th>StudentName</th>
+                                            <th>BATCH</th>
+                                            <th>PC</th>
+                                            <th>Lab</th>
+                                            <th>Send Query</th>
+                                            <th>Cancel Query</th>
+                                            <th>Query Status</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="danger">
+                                            <td class="col-check"><input type="checkbox" class="form-check-input"></td>
+                                            <td>1</td>
+                                            <td>ZYX987</td>
+                                            <td>BATCH A</td>
+                                            <td>35</td>
+                                            <td>LAB C</td>
+                                            <td><button class="buttongreen button2">Approve Query</button></td>
+                                            <td><button class="buttonred button2">Reject Query</button></td>
+                                            <td><button class="buttonyellow button1">CANCELLED</button></td>
+
+                                        </tr>
+                                        <tr class="danger">
+                                            <td class="col-check"><input type="checkbox" class="form-check-input"></td>
+                                            <td>2</td>
+                                            <td>WVU654</td>
+                                            <td>BATCH A</td>
+                                            <td>35</td>
+                                            <td>LAB C</td>
+                                            <td><button class="buttongreen button2">Approve Query</button></td>
+                                            <td><button class="buttonred button2">Reject Query</button></td>
+                                            <td><button class="buttonyellow button1">CANCELLED</button></td>
+                                        </tr>
+                                        <tr class="danger">
+                                            <td class="col-check"><input type="checkbox" class="form-check-input"></td>
+                                            <td>3</td>
+                                            <td>TSR321</td>
+                                            <td>BATCH A</td>
+                                            <td>35</td>
+                                            <td>LAB C</td>
+                                            <td><button class="buttongreen button2">Approve Query</button></td>
+                                            <td><button class="buttonred button2">Reject Query</button></td>
+                                            <td><button class="buttongreen button1">Approved</button></td>
+                                        </tr>
+                                        <tr class="danger">
+                                            <td class="col-check"><input type="checkbox" class="form-check-input"></td>
+                                            <td>4</td>
+                                            <td>QPO987</td>
+                                            <td>BATCH A</td>
+                                            <td>35</td>
+                                            <td>LAB C</td>
+                                            <td><button class="buttongreen button2">Approve Query</button></td>
+                                            <td><button class="buttonred button2">Reject Query</button></td>
+                                            <td><button class="buttongreen button1">Approved</button></td>
+
+                                        </tr>
+                                        <tr class="danger">
+                                            <td class="col-check"><input type="checkbox" class="form-check-input"></td>
+                                            <td>5</td>
+                                            <td>NML654</td>
+                                            <td>BATCH A</td>
+                                            <td>35</td>
+                                            <td>LAB C</td>
+                                            <td><button class="buttongreen button2">Approve Query</button></td>
+                                            <td><button class="buttonred button2">Reject Query</button></td>
+                                            <td><button class="buttonred button1">NEW QUERY</button></td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--view student Result ends-->
+</body>
+</html>

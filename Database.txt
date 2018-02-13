@@ -1,0 +1,44 @@
+CREATE TABLE [dbo].[Admin]
+(
+	[id_admin] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [username_admin] VARCHAR(50) NULL, 
+    [password_admin] VARCHAR(50) NULL
+)
+
+
+CREATE TABLE [dbo].[Student]
+(
+	[id_student] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [name_student] VARCHAR(50) NULL, 
+    [password_student] VARCHAR(50) NULL, 
+    [lab_student] VARCHAR(50) NULL, 
+    [pc_no_student] VARCHAR(50) NULL
+)
+
+
+CREATE TABLE [dbo].[Query]
+(
+	[Id_query] INT NOT NULL PRIMARY KEY, 
+    [status_query] INT NULL, 
+    [Id_student] VARCHAR(50) NULL, 
+    [Id_faculty] VARCHAR(50) NULL
+)
+
+
+CREATE TABLE [dbo].[Query] (
+    [Id_query]     INT IDENTITY (1, 1) NOT NULL,
+    [status_query] INT NULL,
+    [Id_student]   INT NULL,
+    [Id_faculty]   INT NULL,
+    PRIMARY KEY CLUSTERED ([Id_query] ASC),
+    CONSTRAINT [UQ_codes] UNIQUE NONCLUSTERED ([Id_student] ASC, [Id_faculty] ASC)
+);
+
+select * from Student  where id_student =any (select Id_student from Query where Id_faculty=5);
+
+
+update Query set status_query=0 where id_student=2 and id_faculty=5;
+
+
+select * from Faculty left outer join Query on Faculty.Id_faculty=Query.Id_faculty
+ where Query.status_query=0;

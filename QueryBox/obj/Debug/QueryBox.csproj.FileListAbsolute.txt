@@ -1,0 +1,75 @@
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\roslyn\csc.exe
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\roslyn\vbc.exe
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\roslyn\VBCSCompiler.exe
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\App_Data\Queryboxdb_log.ldf
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\QueryBox.dll.config
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\QueryBox.dll
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\QueryBox.pdb
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\EntityFramework.dll
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\EntityFramework.SqlServer.dll
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\System.Web.Helpers.dll
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\System.Web.Mvc.dll
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\System.Web.Razor.dll
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\System.Web.Webpages.dll
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\System.Web.Webpages.Razor.dll
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\EntityFramework.xml
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\EntityFramework.SqlServer.xml
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\System.Web.Razor.xml
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\System.Web.Webpages.xml
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\System.Web.Webpages.Razor.xml
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\System.Web.Helpers.xml
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\bin\System.Web.Mvc.xml
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\obj\Debug\QueryBox.dll
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\obj\Debug\QueryBox.pdb
+C:\Users\Starkushal\Documents\Visual Studio 2015\Projects\QueryBox\QueryBox\obj\Debug\QueryBox.csprojResolveAssemblyReference.cache
+I:\QueryBox\QueryBox\bin\roslyn\csc.exe
+I:\QueryBox\QueryBox\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+I:\QueryBox\QueryBox\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+I:\QueryBox\QueryBox\bin\roslyn\Microsoft.CodeAnalysis.dll
+I:\QueryBox\QueryBox\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+I:\QueryBox\QueryBox\bin\roslyn\Microsoft.CSharp.Core.targets
+I:\QueryBox\QueryBox\bin\roslyn\Microsoft.VisualBasic.Core.targets
+I:\QueryBox\QueryBox\bin\roslyn\System.Collections.Immutable.dll
+I:\QueryBox\QueryBox\bin\roslyn\System.Reflection.Metadata.dll
+I:\QueryBox\QueryBox\bin\roslyn\vbc.exe
+I:\QueryBox\QueryBox\bin\roslyn\VBCSCompiler.exe
+I:\QueryBox\QueryBox\bin\roslyn\VBCSCompiler.exe.config
+I:\QueryBox\QueryBox\bin\QueryBox.dll.config
+I:\QueryBox\QueryBox\bin\QueryBox.dll
+I:\QueryBox\QueryBox\bin\QueryBox.pdb
+I:\QueryBox\QueryBox\bin\EntityFramework.dll
+I:\QueryBox\QueryBox\bin\EntityFramework.SqlServer.dll
+I:\QueryBox\QueryBox\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+I:\QueryBox\QueryBox\bin\Microsoft.Web.Infrastructure.dll
+I:\QueryBox\QueryBox\bin\System.Web.Helpers.dll
+I:\QueryBox\QueryBox\bin\System.Web.Mvc.dll
+I:\QueryBox\QueryBox\bin\System.Web.Razor.dll
+I:\QueryBox\QueryBox\bin\System.Web.Webpages.Deployment.dll
+I:\QueryBox\QueryBox\bin\System.Web.Webpages.dll
+I:\QueryBox\QueryBox\bin\System.Web.Webpages.Razor.dll
+I:\QueryBox\QueryBox\bin\EntityFramework.xml
+I:\QueryBox\QueryBox\bin\EntityFramework.SqlServer.xml
+I:\QueryBox\QueryBox\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+I:\QueryBox\QueryBox\bin\System.Web.Razor.xml
+I:\QueryBox\QueryBox\bin\System.Web.Webpages.xml
+I:\QueryBox\QueryBox\bin\System.Web.Webpages.Deployment.xml
+I:\QueryBox\QueryBox\bin\System.Web.Webpages.Razor.xml
+I:\QueryBox\QueryBox\bin\System.Web.Helpers.xml
+I:\QueryBox\QueryBox\bin\System.Web.Mvc.xml
+I:\QueryBox\QueryBox\obj\Debug\QueryBox.dll
+I:\QueryBox\QueryBox\obj\Debug\QueryBox.pdb
+I:\QueryBox\QueryBox\obj\Debug\QueryBox.csprojResolveAssemblyReference.cache

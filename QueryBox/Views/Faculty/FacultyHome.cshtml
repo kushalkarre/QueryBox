@@ -1,0 +1,160 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/css/FacultyHomepage.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .buttongreen {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+        }
+
+        .buttonred {
+            background-color: red; /* Green */
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+        }
+
+        .buttonyellow {
+            background-color: yellow; /* Green */
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+        }
+
+        .button1 {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+
+        .button2:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+
+        img {
+            border-radius: 8px;
+        }
+    </style>
+
+
+</head>
+<body>
+
+
+
+    <div class="container">
+        <div class="imgcontainer">
+            <table class="table table-striped table-hover">
+                <tr>
+                    <td>
+                        <img src="~/images/facultylogin.jpg" alt="" width="200" height="200">
+
+                    </td>
+                    <td>
+
+                        <b>
+                            Name :<b>
+                                <BR><BR>
+                                <b>
+                                    BATCH :<b>
+                                        <BR><BR>
+                                                <BR><BR>
+                    </td>
+                    <td>
+
+                        <b>@ViewBag.faculty_name</b>
+                      
+                        <br><br>
+                        <b>@ViewBag.faculty_lab</b>
+                        <p></p>
+                    </td>
+
+            </table>
+        </div>
+        <div class="row">
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3>
+                        List of Students
+                    </h3>
+                </div>
+                <table class="table table-striped table-hover">
+                    <thead>
+              
+                        
+
+                         <tr>
+                            <th class="col-check"></th>
+                            <th>Id</th>
+                            <th>StudentName</th>
+                            <th>BATCH</th>
+                            <th>PC</th>
+                            <th>Send Query</th>
+                            <th>Cancel Query</th>
+                                                   
+                        </tr>
+                    </thead>
+                    <tbody>
+    @for (int i = 0; i < Model.Rows.Count; i++)
+    {
+                         <tr class="success">
+                            <td class="col-check"><input type="checkbox" class="form-check-input"></td>
+                            <td>@Model.Rows[i][0]</td>
+                            <td>@Model.Rows[i][1]</td>
+                            <td>@Model.Rows[i][3]</td>
+                            <td>@Model.Rows[i][4]</td>
+                            
+                             <form method="post" action="@Url.Action("FacultyResponse","Faculty")">
+                                 <input type="hidden" name="student_id" value="@Model.Rows[i][0]">
+                                 <td><button class="buttongreen button2" name="approve" value="0">Approve Query</button></td>
+                              </form>
+                             <form method="post" action="@Url.Action("FacultyResponse","Faculty")" >
+                                 <input type="hidden" name="student_id" value="@Model.Rows[i][0]">
+                                   <td><button class="buttonred button2" name="approve" value="2">Reject Query</button></td>
+                             </form>
+                           </tr>
+                       }
+                    </tbody>
+                </table>
+                @ViewBag.response
+            </div>
+        </div>
+    </div>
+    </body>

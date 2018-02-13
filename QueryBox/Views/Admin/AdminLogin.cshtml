@@ -1,0 +1,38 @@
+﻿@model QueryBox.Models.Admin
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/login.css">
+</head>
+<body>
+    <form  method="post" action="@Url.Action("AdminHome","Admin")" width=50>
+        <center>
+            <div class="imgcontainer">
+                <img src="~/images/adminlogin.jpg" alt="" class="avatar1">
+            </div>
+            <h2 class="form-signin-heading">Admin login</h2>
+            <div class="container">
+                <label><b>Username</b></label>
+                
+                <input type="text" placeholder="Enter Username"  name="uname" required>
+                <br>
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <br>
+                <b>@ViewBag.Status</b>
+                <button type="submit">Login</button>
+                <br>
+                
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <br>
+                <button type="button" class="cancelbtn">Cancel</button>
+                <BR>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </center>
+    </form>
+</body>
+</html>
+
+

@@ -1,0 +1,46 @@
+﻿@model QueryBox.RouteConfig
+
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/login.css">
+</head>
+<body>
+    <form method="post" action="@Url.Action("StudentHome","Student")" width=50>
+       
+            <center>
+
+                <div class="imgcontainer">
+                    <img src="~/images/studentlogin.jpg" alt="" class="avatar">
+                </div>
+
+                <h2 class="form-signin-heading">Student login</h2>
+                <div class="container">
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                    <br>
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <br>
+                    <button type="submit">Login</button>
+                    <br>
+                    <b>@ViewBag.status</b>
+                    <br>
+                    <input type="checkbox" checked="checked"> Remember me
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <br>
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <BR>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </center>
+        </form>
+</body>
+</html>
+
+

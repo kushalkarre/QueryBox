@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <div class="container">
+        <style>
+            h1 {
+                color: blue;
+                font-family: verdana;
+                font-size: 300%;
+            }
+        </style>
+
+</head>
+<body>
+
+
+    <center><h1>QUERY BOX</h1></center>
+    <br/>
+    <br/>
+    <div class="row">
+
+        <div class="col-sm-4">
+            <center>
+
+                <a href="@Url.Action("StudentLogin", "Student")"/>
+                    <img src="~/images/studentlogin.jpg" alt="" class="avatarlogin">
+                    <h2 class="form-signin-heading">Student login</h2>
+            </center>
+        </div>
+        <div class="col-sm-4">
+            <center>
+                <a href="@Url.Action("AdminLogin", "Admin")"/>
+                    <img src="~/images/adminlogin.jpg" alt="" class="avatarlogin">
+                    <h2 class="form-signin-heading">Admin login</h2>
+            </center>
+        </div>
+
+
+        <div class="col-sm-4">
+
+            <center>
+                <a href="@Url.Action("FacultyLogin", "Faculty")"/>
+                    <img src="~/images/facultylogin.jpg" alt="" class="avatarlogin">
+                    <h2 class="form-signin-heading">Faculty login</h2>
+            </center>
+
+        </div>
+
+
+
+
+
+    </div>
+    </div>
+
+</body>
+</html>
